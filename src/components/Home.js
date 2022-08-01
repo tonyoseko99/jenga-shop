@@ -39,9 +39,7 @@ function Home() {
       <div className="card-container">
         {searchItems.map((item) => {
           return (
-            
-              <Items item={item} />
-            
+            <Items item={item} key={item.id}/>
           );
         })}
       </div>
