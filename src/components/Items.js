@@ -19,4 +19,4 @@ function Items({item}) {
     </>
   );
 }
-export default Item;
+export default Items;

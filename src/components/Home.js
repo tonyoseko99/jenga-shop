@@ -9,9 +9,7 @@ function Home() {
   useEffect(() => {
     fetch(url)
       .then((response) => response.json())
-      .then((response) => {
-        setItems(response.products);
-      });
+      .then((response) => setItems(response));
   }, []);
 
   useEffect(() => {
@@ -21,7 +19,7 @@ function Home() {
   return (
     <div className="container">
       <div className="input">
-      <input
+        <input
           id="search-input"
           type="text"
           placeholder="search..."
@@ -33,14 +31,11 @@ function Home() {
             setSearchItems(query);
           }}
         />
-        
       </div>
 
       <div className="card-container">
         {searchItems.map((item) => {
-          return (
-            <Items item={item} />
-          );
+          return <Items item={item} key={item.id} />;
         })}
       </div>
     </div>

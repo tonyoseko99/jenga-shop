@@ -15,7 +15,6 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/items" element={<Items />} />
-          <Route path="/item/id:" element={<Item />} />
           <Route>404 Error Page</Route>
         </Routes>
       </Router>
