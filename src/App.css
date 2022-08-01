@@ -46,3 +46,42 @@ body {
   padding: 0;
   background: #EDE5F3;
 }
+
+.navbar {
+  background: #EDE5F3;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.navbar h1{
+  font-size: 32px;
+}
+
+.navbar .navbar-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.navbar-list li {
+  margin-right: 40px;
+}
+
+.navbar input[type="text"] {
+  height: 25px;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+.navbar button[type="submit"] {
+  height: 30px;
+  width: 80px;
+  background-color: #f9992d;
+  border: none;
+  font-size: 15px;
+  color: white;
+}
+
