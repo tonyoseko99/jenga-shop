@@ -21,8 +21,7 @@ function Home() {
   return (
     <div className="container">
       <div className="input">
-        {/* search functionality */}
-        <input
+      <input
           id="search-input"
           type="text"
           placeholder="search..."
@@ -34,6 +33,7 @@ function Home() {
             setSearchItems(query);
           }}
         />
+        
       </div>
 
       <div className="card-container">
