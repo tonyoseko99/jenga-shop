@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Item from "./Item";
 
-function Item({item}) {
+function Items({item}) {
   return (
     <>
       <div className="card" key={item.id}>
