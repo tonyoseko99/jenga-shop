@@ -124,3 +124,33 @@ body {
   align-items: center;
   justify-content: space-around;
 }
+
+.card img{
+  height: 200px;
+  width: 200px;
+}
+.card h2{
+  height: 55px;
+  border-bottom: 1px solid black;
+  width: 400px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: left;
+}
+.card p{
+  width: 400px;
+  height: 200px;
+  text-align: left;
+  line-height: 20px;
+}
+
+/* footer */
+.footer {
+  background: #EDE5F3;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  color: black;
+  position: sticky;
+  margin-bottom: 0;
+}
