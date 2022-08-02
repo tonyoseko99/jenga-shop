@@ -55,6 +55,20 @@ body {
   justify-content: space-evenly;
   cursor: pointer;
 }
+.navbar button{
+  background-color: #282c34;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.navbar button:hover{
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
 
 .navbar h1{
   font-size: 32px;

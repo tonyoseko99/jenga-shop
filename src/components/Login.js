@@ -1,16 +1,30 @@
 import React, { useState } from "react";
 import axios from 'axios'
 
-function Login() {
+function Login({token, setToken}) {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  userUrl = 'https://fakestoreapi.com/auth/login';
   const userHandler = () => {
-    axios(
-        
-    )
+    setError("");
+    setPassword("");
+    setUserName("");
+    axios({
+        url:'https://fakestoreapi.com/auth/login',
+        method: "POST",
+        data: {
+            username: userName,
+            password: password,
+        },
+    }).then(response => {
+        console.log(response.data.token);
+        setToken(response.data.token);
+        localStorage.setItem("userToken", response.data.token);
+    }).catch((err) => {
+        console.log(err.response)
+        setError(err.response.data);
+    });
   }
 
   return (
@@ -29,8 +43,8 @@ function Login() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <small>eror placeholder</small>
-        <button>Login</button>
+        {setError && <small>{error}</small>}
+        <button onClick={userHandler}>Login</button>
       </div>
     </div>
   );
