@@ -1,11 +1,17 @@
 # e-commerce
-- A web app designed and developed to facilitate the sell of products online
+- A web app designed and developed to facilitate the sale of products online
 
 ## Technologies used
+### Front-End
 - HTML
 - CSS
 - JavasScript
 - React js
+
+### Backend
+- db.json database hosted on gh-pages (`https://tonyoseko99.github.io/json-api/db.json`)
+- Fake Store API (for fetching and authenticating user login information)
+- Guest sign in credentials: (`username: "mor_2314", password: "83r5^_"`)
 
 ## Installation 
 - Fork or clone the repository
@@ -29,7 +35,8 @@ Don't forget to give the project a star! Thanks again!
 
 ## Acknowledgements
 - db.Json database file hosted on gh-pages
+
 ## Licence
 - MIT
 
-## -copyright @ 2022
+## copyright @ 2022
