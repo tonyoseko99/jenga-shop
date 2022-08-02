@@ -8,7 +8,7 @@ function Item(){
     useEffect(()=>{
         fetch(`https://fakestoreapi.com/products/${id}`)
         .then(response => response.json())
-        .then(response => console.log(response))
+        .then(response => setProduct(response))
     }, [id])
 
     return (
